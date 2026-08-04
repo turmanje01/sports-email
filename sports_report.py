@@ -43,6 +43,9 @@ def get_scores():
                 
         except Exception:
             report_lines.append(f"⚠️ {team}: Data unavailable.")
+            report_lines.append("\n--") 
+    current_time = datetime.now().strftime("%b %d, %Y at %I:%M %p")
+    report_lines.append(f"Report Generated: {current_time}")
             
     return "\n".join(report_lines)
 

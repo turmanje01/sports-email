@@ -14,7 +14,7 @@ def get_scores():
     }
 
     yesterday = datetime.now() - timedelta(days=1)
-    date_str = yesterday.strftime("%Y%m%d")
+    date_str = yesterday.strftime("20231112")
     
     report_lines = [f"Daily Sports Report for {yesterday.strftime('%B %d, %Y')}\n"]
     

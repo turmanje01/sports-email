@@ -16,7 +16,7 @@ def get_scores():
     yesterday = datetime.now() - timedelta(days=1)
     date_str = yesterday.strftime("20181027")
     
-    report_lines = [f"Daily Sports Report for {yesterday.strftime('%B %d, %Y')}\n"]
+    report_lines = [f"Daily Sports Report for {yesterday.strftime('20181027')}\n"]
     
     for team, url in endpoints.items():
         try:
